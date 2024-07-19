@@ -11,6 +11,7 @@ class AndroidDevLabApplication : Application() {
         super.onCreate()
 
         appComponent = DaggerApplicationComponent.factory().create(applicationContext)
-
     }
+
+    fun getAndroidDevLabAppComponent() = appComponent
 }
