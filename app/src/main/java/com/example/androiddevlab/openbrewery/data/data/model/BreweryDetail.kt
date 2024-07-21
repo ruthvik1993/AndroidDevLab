@@ -6,7 +6,7 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class BreweryDetail(
     val id: String,
-    val nane: String,
+    val name: String,
     val brewery_type: String,
     val address_1: String,
     val address_2: String,

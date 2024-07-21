@@ -20,7 +20,7 @@ class NetworkModule {
         httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
         okHttpBuilder.addInterceptor(httpLoggingInterceptor)
 
-        return Retrofit.Builder().baseUrl("https://api.openbrewerydb.org/v1")
+        return Retrofit.Builder().baseUrl("https://api.openbrewerydb.org/v1/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpBuilder.build())
             .build()
